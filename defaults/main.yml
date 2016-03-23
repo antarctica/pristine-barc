@@ -1,0 +1,6 @@
+---
+# Default variables - inventory or playbook overrides will be respected
+
+# BARC specific variables
+£ROLE-NAME-VARIABLE-SAFE_barc_role_name: £ROLE-NAME-VARIABLE-SAFE
+£ROLE-NAME-VARIABLE-SAFE_barc_role_version: £ROLE-VERSION

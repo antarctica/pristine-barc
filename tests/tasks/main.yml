@@ -1,0 +1,34 @@
+---
+# Tests ...
+
+# Flush handlers
+#
+# This ensures any pending handlers are executed before any tests are performed. This is particularly important where
+# a service needs to be restarted before new configuration options are used for example.
+
+- meta: flush_handlers
+
+# Atomic checks
+#
+# These checks mirror individual tasks to ensure they execute correctly
+# E.g. creating a user, installing the right package or generating a valid configuration file
+
+- include: atomic/register-role.yml
+
+# BARC Manifest checks
+#
+# These checks ensure Ansible local facts were set correctly by this role
+
+- action: setup
+
+- name: assert role was applied via BARC manifest
+  assert:
+    that:
+      - "ansible_local.barc_£ROLE-NAME-VARIABLE-SAFE.general.role_applied == 'true'"
+
+# Functionality checks
+#
+# These checks ensure overall processes can be completed to give a valid result
+# E.g. checking a web-server serves a web-page ensures the relevant packages and configuration files work together
+
+# There are no functionality checks for this role
