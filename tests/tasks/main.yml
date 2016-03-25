@@ -21,14 +21,10 @@
 
 - action: setup
 
-- name: assert role was applied via BARC manifest
-  assert:
-    that:
-      - "ansible_local.barc_£ROLE-NAME-VARIABLE-SAFE.general.role_applied == 'true'"
 
 # Functionality checks
 #
 # These checks ensure overall processes can be completed to give a valid result
 # E.g. checking a web-server serves a web-page ensures the relevant packages and configuration files work together
 
-# There are no functionality checks for this role
+- include: functionality/barc-manifest.yml
