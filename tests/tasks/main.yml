@@ -8,27 +8,22 @@
 
 - meta: flush_handlers
 
-# Atomic checks
+# Reload local facts
 #
-# These checks mirror individual tasks to ensure they execute correctly
+# This ensures any Ansible local facts registered by tasks in the current playbook are loaded and so can be tested.
+
+- action: setup
+
+# Atomic tests
+#
+# These tests mirror individual tasks to ensure they execute correctly
 # E.g. creating a user, installing the right package or generating a valid configuration file
 
 - include: atomic/register-role.yml
 
-# BARC Manifest checks
+# Functionality tests
 #
-# These checks ensure Ansible local facts were set correctly by this role
-
-- action: setup
-
-- name: assert role was applied via BARC manifest
-  assert:
-    that:
-      - "ansible_local.barc_£ROLE-NAME-VARIABLE-SAFE.general.role_applied == 'true'"
-
-# Functionality checks
-#
-# These checks ensure overall processes can be completed to give a valid result
+# These tests ensure overall processes can be completed to give a valid result
 # E.g. checking a web-server serves a web-page ensures the relevant packages and configuration files work together
 
-# There are no functionality checks for this role
+- include: functionality/barc-manifest.yml
