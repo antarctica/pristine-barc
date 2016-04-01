@@ -2,9 +2,13 @@
 
 A starting point for creating a role for the BAS Ansible Roles Collection (BARC).
 
-* See [here]() for general Pristine documentation
-* See [here]() for Pristine documentation specific to the BARC flavour
-* See [here]() for a quick start on how to implement the BARC flavour of Pristine in a new project
+* See [here](https://paper.dropbox.com/doc/BAS-Base-Project-Pristine-Base-Flavour-OQ7thGoC0OvVSIP6epNee) for general 
+Pristine documentation
+* See [here](https://paper.dropbox.com/doc/BAS-Base-Project-Pristine-BARC-Flavour-07j1BJt65gs2crIhMgWhw) for 
+documentation specific to the BARC flavour of Pristine
+* See 
+[here](https://paper.dropbox.com/doc/BAS-Base-Project-Pristine-BARC-Flavour-07j1BJt65gs2crIhMgWhw#:h=Getting-started) 
+for a quick start on how to implement the BARC flavour of Pristine in a new project
 
 ## Licence
 
@@ -14,7 +18,3 @@ Unless stated otherwise, all documentation is licensed under the Open Government
 licensed under the MIT license.
 
 Copies of these licenses are included within this project.
-
-## To document
-
-* In `tests/tasks/main.yml` - register role should be the last atomic test

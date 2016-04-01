@@ -5,6 +5,8 @@ This role adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased][unreleased]
 
+## 0.1.0 - 31/03/2016
+
 ### Added
 
 * Initial version based on version 0.1.0 of the Pristine Base flavour
