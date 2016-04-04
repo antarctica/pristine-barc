@@ -10,6 +10,9 @@ This role adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 * Setup script to automate setting up new instances of this project template
 * Template `README` and `CHANGELOG`, which were previously tracked as documentation appendices
 
+### Fixed
+
+* Wrong environment for Vagrant dynamic inventory
 ## 0.1.0 - 31/03/2016
 
 ### Added
