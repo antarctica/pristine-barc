@@ -5,6 +5,10 @@ This role adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased][unreleased]
 
+### Added
+
+* Template `README` and `CHANGELOG`, which were previously tracked as documentation appendices
+
 ## 0.1.0 - 31/03/2016
 
 ### Added
