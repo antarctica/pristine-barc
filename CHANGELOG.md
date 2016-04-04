@@ -13,6 +13,8 @@ This role adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 ### Fixed
 
 * Wrong environment for Vagrant dynamic inventory
+* Wrong variable for role description in meta file
+
 ## 0.1.0 - 31/03/2016
 
 ### Added
