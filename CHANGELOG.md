@@ -14,6 +14,7 @@ This role adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 * Wrong environment for Vagrant dynamic inventory
 * Wrong variable for role description in meta file
+* Wrong path to vagrant directory in test environment
 
 ## 0.1.0 - 31/03/2016
 
