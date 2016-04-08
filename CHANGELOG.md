@@ -5,6 +5,11 @@ This role adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased][unreleased]
 
+
+### Removed
+
+* README section of BARC non-system sources variable, which is not included in roles by default
+
 ## 0.2.0 - 06/04/2016
 
 ### Added
