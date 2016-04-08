@@ -15,31 +15,29 @@ Develop: £PROJECT-CI-DEVELOPMENT-BADGE
  
 ## Quality Assurance
  
-This role uses manual and automated testing to ensure its features work as advertised. See [here](tests/README.md) for more information.
+This role uses manual and automated testing to ensure its features work as advertised. 
+See [here](tests/README.md) for more information.
  
 ## Dependencies
  
 * None
  
 More information on role dependencies is available in the 
-[BARC General Documentation](
-https://antarctica.hackpad.com/BARC-Overview-and-Policies-SzcHzHvitkt#:h=Role-dependencies)
+[BARC General Documentation](https://antarctica.hackpad.com/BARC-Overview-and-Policies-SzcHzHvitkt#:h=Role-dependencies)
  
 ## Requirements
  
 * None
  
 More information on role requirements is available in the 
-[BARC General Documentation](
-https://antarctica.hackpad.com/BARC-Overview-and-Policies-SzcHzHvitkt#:h=Role-requirements)
+[BARC General Documentation](https://antarctica.hackpad.com/BARC-Overview-and-Policies-SzcHzHvitkt#:h=Role-requirements)
  
 ## Limitations
  
 * None
  
 More information on role limitations is available in the 
-[BARC General Documentation](
-https://antarctica.hackpad.com/BARC-Overview-and-Policies-SzcHzHvitkt#:h=Role-limitations)
+[BARC General Documentation](https://antarctica.hackpad.com/BARC-Overview-and-Policies-SzcHzHvitkt#:h=Role-limitations)
  
 ## Usage
  
@@ -55,8 +53,7 @@ Note: You **SHOULD** use this feature to determine whether this role has been ap
 If you do not want these facts to be set by this role, you **MUST** skip the **BARC_SET_MANIFEST** tag.
  
 More information is available in the 
-[BARC General Documentation](
-https://antarctica.hackpad.com/BARC-Overview-and-Policies-SzcHzHvitkt#:h=Role-Manifest)
+[BARC General Documentation](https://antarctica.hackpad.com/BARC-Overview-and-Policies-SzcHzHvitkt#:h=Role-Manifest)
  
 ### Typical playbook
  
@@ -77,8 +74,7 @@ BARC roles use standardised tags to control which aspects of an environment are 
 Tasks in this role will 'tag' themselves with these tags as appropriate, typically in `tasks/main.yml`.
  
 More information is available in the
-[BARC General Documentation](
-https://antarctica.hackpad.com/BARC-Overview-and-Policies-SzcHzHvitkt#:h=Appendix-B---BARC-Standardised)
+[BARC General Documentation](https://antarctica.hackpad.com/BARC-Overview-and-Policies-SzcHzHvitkt#:h=Appendix-B---BARC-Standardised)
  
 ### Variables
  
@@ -115,16 +111,14 @@ https://antarctica.hackpad.com/BARC-Overview-and-Policies-SzcHzHvitkt#:h=Issue-T
  
 All changes should be committed, via pull request, to the canonical repository:
  
-`
-ssh://git@stash.ceh.ac.uk:7999/barc/ROLE-NAME.git` 
+`ssh://git@stash.ceh.ac.uk:7999/barc/ROLE-NAME.git` 
  
 A read-only mirror of this repository is maintained on GitHub:
  
 `git@github.com:bas-ansible-roles-collection/ROLE-NAME.git`
  
 More information is available in the
-[BARC General Documentation](
-https://antarctica.hackpad.com/BARC-Overview-and-Policies-SzcHzHvitkt#:h=Source-Code)
+[BARC General Documentation](https://antarctica.hackpad.com/BARC-Overview-and-Policies-SzcHzHvitkt#:h=Source-Code)
  
 ### Contributing policy
  
@@ -133,8 +127,7 @@ This project welcomes contributions, see `CONTRIBUTING.md` for our general polic
 ### Release procedure
  
 The general release procedure for BARC roles is available in the
-[BARC General Documentation](
-https://antarctica.hackpad.com/BARC-Overview-and-Policies-SzcHzHvitkt#:h=Release-procedures)
+[BARC General Documentation](https://antarctica.hackpad.com/BARC-Overview-and-Policies-SzcHzHvitkt#:h=Release-procedures)
  
 ## Licence
  

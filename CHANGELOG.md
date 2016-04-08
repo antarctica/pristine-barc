@@ -9,6 +9,9 @@ This role adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 * Extra context for variables in setup script
 
+### Fixed
+
+* README white-spacing and formatting
 
 ### Removed
 
