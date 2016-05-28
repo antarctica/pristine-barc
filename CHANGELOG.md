@@ -17,6 +17,7 @@ flavours where TLS certificates are unexpected
 ### Fixed
 
 * README white-spacing and formatting
+* White space inconsistencies
 
 ### Removed
 
