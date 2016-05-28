@@ -21,6 +21,10 @@ flavours where TLS certificates are unexpected
 * README white-spacing and formatting
 * White space inconsistencies
 
+### Changed
+
+* Ignoring Ansible retry files
+
 ### Removed
 
 * README section of BARC non-system sources variable, which is not included in roles by default
