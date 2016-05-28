@@ -19,10 +19,12 @@ flavours where TLS certificates are unexpected
 ### Fixed
 
 * README white-spacing and formatting
+* Header formatting in README, change log
 * White space inconsistencies
 
 ### Changed
 
+* Updating dynamic inventories to remove debug code and improve stability
 * Ignoring Ansible retry files
 
 ### Removed

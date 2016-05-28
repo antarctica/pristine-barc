@@ -1,4 +1,4 @@
-# £PROJECT-TITLE-CASE (£PROJECT-LOWER-CASE)
+# £PROJECT-TITLE-CASE (`£PROJECT-LOWER-CASE`)
 
 Master: £PROJECT-CI-STABLE-BADGE
 Develop: £PROJECT-CI-DEVELOPMENT-BADGE
@@ -29,22 +29,22 @@ More information on Ansible compatibility is available in the
 [BARC General Documentation](https://antarctica.hackpad.com/BARC-Overview-and-Policies-SzcHzHvitkt#:h=Ansible-compatbility).
 
 ## Dependencies
-* None
 
+* none
 
 More information on role dependencies is available in the
 [BARC General Documentation](https://antarctica.hackpad.com/BARC-Overview-and-Policies-SzcHzHvitkt#:h=Role-dependencies)
 
 ## Requirements
-* None
 
+* none
 
 More information on role requirements is available in the
 [BARC General Documentation](https://antarctica.hackpad.com/BARC-Overview-and-Policies-SzcHzHvitkt#:h=Role-requirements)
 
 ## Limitations
-* None
 
+* none
 
 More information on role limitations is available in the
 [BARC General Documentation](https://antarctica.hackpad.com/BARC-Overview-and-Policies-SzcHzHvitkt#:h=Role-limitations)
@@ -58,7 +58,6 @@ The specific local facts set for this role are:
 
 * `ansible_local.barc_£ROLE-NAME-VARIABLE-SAFE.general.role_applied` - (boolean) records whether a role has been applied
 * `ansible_local.barc_£ROLE-NAME-VARIABLE-SAFE.general.role_version` - (string) records the version of the role that was applied
-Note: You **SHOULD** use this feature to determine whether this role has been applied to a system.
 
 **Note:** You **SHOULD** use this feature to determine whether this role has been applied to a system.
 If you do not want these facts to be set by this role, you **MUST** skip the **BARC_SET_MANIFEST** tag.
@@ -92,16 +91,16 @@ More information is available in the
 #### *£ROLE-NAME-VARIABLE-SAFE_barc_role_name*
 
 * **MUST NOT** be specified
-* Specifies the name of this role within the BAS Ansible Roles Collection (BARC) used for setting local facts
-* See the *BARC roles manifest* section for more information
-* Example: `£ROLE-NAME-VARIABLE-SAFE` 
+* specifies the name of this role within the BAS Ansible Roles Collection (BARC) used for setting local facts
+* see the *BARC roles manifest* section for more information
+* example: `£ROLE-NAME-VARIABLE-SAFE`
 
 #### *£ROLE-NAME-VARIABLE-SAFE_barc_role_version*
 
 * **MUST NOT** be specified
-* Specifies the name of this role within the BAS Ansible Roles Collection (BARC) used for setting local facts
-* See the *BARC roles manifest* section for more information
-* Example: `2.0.0` 
+* specifies the name of this role within the BAS Ansible Roles Collection (BARC) used for setting local facts
+* see the *BARC roles manifest* section for more information
+* example: `2.0.0`
 
 ## Developing
 

@@ -1,5 +1,4 @@
-
-£PROJECT-TITLE-CASE (£PROJECT-LOWER-CASE) - Testing
+# £PROJECT-TITLE-CASE (`£PROJECT-LOWER-CASE`) - Testing
 
 ## Overview
 
