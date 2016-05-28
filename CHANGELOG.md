@@ -13,6 +13,8 @@ flavours where TLS certificates are unexpected
 ### Added
 
 * Extra context for variables in setup script
+* Ansible compatibility information
+* Ansible 2.0 support
 
 ### Fixed
 
