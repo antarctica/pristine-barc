@@ -5,6 +5,11 @@ This role adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased][unreleased]
 
+### Removed - BREAKING!
+
+* Files directory removed from testing provisioning as certificates sub-directory should not be included in BARC
+flavours where TLS certificates are unexpected
+
 ### Added
 
 * Extra context for variables in setup script
