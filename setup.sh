@@ -157,12 +157,12 @@ Option_barc_role="$(boolean "$Option_barc_role")"
 Option_role_version_0_1_0="$(boolean "$Option_role_version_0_1_0")"
 Option_using_semaphore="$(boolean "$Option_using_semaphore")"
 
-read -r -p "? [01/10] > Which version of Pristine are you using? " VAR_pristine_version
+read -r -p "? [01/10] > Which version of Pristine are you using? (e.g. '0.1.0') " VAR_pristine_version
 if [ "$Option_barc_role" = true ] ; then
     VAR_pristine_flavour="BARC"
     printf "* [02/10] > Pristine flavour set to '$VAR_pristine_flavour'\n"
 else
-    read -r -p "? [02/10] > Which flavour of Pristine are you using? " VAR_pristine_flavour
+    read -r -p "? [02/10] > Which flavour of Pristine are you using? (e.g. 'Base')  " VAR_pristine_flavour
 fi
 read -r -p "? [03/10] > What's a one line description for this project? " VAR_project_oneline
 read -r -p "? [04/10] > What's the name of this project in snake case (like-this)? " VAR_project_name_lower

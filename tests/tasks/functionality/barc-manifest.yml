@@ -4,4 +4,4 @@
 - name: assert role was applied via BARC manifest
   assert:
     that:
-      - "ansible_local.barc_£ROLE-NAME-VARIABLE-SAFE.general.role_applied == 'true'"
+      - "{{ ansible_local.barc_£ROLE-NAME-VARIABLE-SAFE.general.role_applied }} == true"

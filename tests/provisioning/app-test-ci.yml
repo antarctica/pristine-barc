@@ -1,7 +1,7 @@
 ---
 # Run tests for role
 
-- name: run role tests
+- name: apply role and run tests
   hosts: localhost
   remote_user: "{{ privileged_remote_user }}"
   become: yes

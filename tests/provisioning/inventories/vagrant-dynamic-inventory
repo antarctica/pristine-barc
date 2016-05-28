@@ -57,6 +57,25 @@ if ($options['debug']) {
 }
 
 /*
+ * Initialisation - Override selected settings / options from command line
+ */
+
+$validScriptOptions = [
+    "list",
+    "host:",
+    "cwd:"
+];
+$scriptOptions = getopt('', $validScriptOptions);
+
+if (array_key_exists('cwd', $scriptOptions)) {
+    $options['working_directory'] = $scriptOptions['cwd'];
+}
+
+// TODO: Store these in the default options array ad override as needed
+$scriptMode = 'list';
+$host = null;
+
+/*
  * Initialisation - Switch to working directory
  */
 
@@ -93,15 +112,6 @@ $groups = make_groups_from_hosts($hosts);
 /*
  * Inventory construction - format the relevant information on hosts and groups into an Ansible compatible inventory
  */
-
-// TODO: Implement all of this much better!
-$validScriptOptions = [
-    "list",
-    "host:"
-];
-$scriptOptions = getopt('', $validScriptOptions);
-$scriptMode = 'list';
-$host = null;
 
 if (array_key_exists('host', $scriptOptions)) {
     $scriptMode = 'host';
@@ -374,6 +384,10 @@ function get_host_details_from_messages(array $hosts, array $messages, $fqdnDoma
         $host = get_host_hostname($host, $message);
         $host = get_host_identity_file($host, $message);
 
+
+        // echo "DEBUG: Becca \n";
+        // var_dump($host);
+
         // These functions set additional information using pre-defined values, or values derived from existing values
         $host = set_host_fqdn($host, $fqdnDomain);
 
@@ -448,6 +462,9 @@ function get_host_hostname(array $host, array $message)
     // Get the name of the host (e.g. 'foo-dev-node1') which translates to the short hostname (e.g. unqualified)
     $host['hostname'] = strip_string(get_string_between($messageValue, 'Host', 'HostName'));
 
+    // echo "DEBUG: CONNIE \n";
+    // var_dump($host);
+
     return $host;
 }
 
@@ -508,6 +525,10 @@ function get_host_identity_file(array $host, array $message)
  */
 function set_host_fqdn(array $host, $fqdnDomain)
 {
+
+    // echo "DEBUG: Amy \n";
+    // var_dump($$host);
+
     if (! array_key_exists('hostname', $host) && empty($host['hostname'])) {
         return $host;
     }
@@ -795,6 +816,9 @@ function make_inventory_hosts(array $inventory, array $hosts)
 {
     foreach ($hosts as $hostName => $hostDetails) {
 
+        // echo "DEBUG: Rencia \n";
+        // var_dump($hostDetails);
+
         // Prefer a FQDN over a hostname and fall back to the machine name
         if (array_key_exists('fqdn', $hostDetails)) {
             $host = $hostDetails['fqdn'];
@@ -852,7 +876,26 @@ function make_inventory_groups(array $inventory, array $groups)
  */
 function switch_to_working_directory($workingDirectory)
 {
-    chdir($workingDirectory);
+    // Get current path, split it into an array and select the last element (i.e. the current directory)
+    $currentCWD = getcwd();
+    $currentCWDParts = explode('/', $currentCWD);
+    $currentDirectory = end($currentCWDParts);
+
+    // Protect against cases where the current directory is already 'site-development-local' or 'site-testing-local'
+    // and the user is trying to change to that directory
+    if (
+      ($currentDirectory == 'site-development-local' && $workingDirectory == './site-development-local') ||
+      ($currentDirectory == 'site-testing-local' && $workingDirectory == './site-testing-local')
+    ) {
+
+      # No need to change directory
+
+    } else {
+
+      chdir($workingDirectory);
+    }
+
+
 }
 
 /**

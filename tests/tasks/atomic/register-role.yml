@@ -8,4 +8,4 @@
 - name: assert local fact file was generated correctly
   assert:
     that:
-      - "'role_applied=true' in £ROLE-NAME-VARIABLE-SAFE_test_fact_ansible_local_fact_contents.stdout"
+      - "'role_applied=true' in '{{ £ROLE-NAME-VARIABLE-SAFE_test_fact_ansible_local_fact_contents.stdout }}'"
