@@ -384,10 +384,6 @@ function get_host_details_from_messages(array $hosts, array $messages, $fqdnDoma
         $host = get_host_hostname($host, $message);
         $host = get_host_identity_file($host, $message);
 
-
-        // echo "DEBUG: Becca \n";
-        // var_dump($host);
-
         // These functions set additional information using pre-defined values, or values derived from existing values
         $host = set_host_fqdn($host, $fqdnDomain);
 
@@ -462,9 +458,6 @@ function get_host_hostname(array $host, array $message)
     // Get the name of the host (e.g. 'foo-dev-node1') which translates to the short hostname (e.g. unqualified)
     $host['hostname'] = strip_string(get_string_between($messageValue, 'Host', 'HostName'));
 
-    // echo "DEBUG: CONNIE \n";
-    // var_dump($host);
-
     return $host;
 }
 
@@ -525,10 +518,6 @@ function get_host_identity_file(array $host, array $message)
  */
 function set_host_fqdn(array $host, $fqdnDomain)
 {
-
-    // echo "DEBUG: Amy \n";
-    // var_dump($$host);
-
     if (! array_key_exists('hostname', $host) && empty($host['hostname'])) {
         return $host;
     }
@@ -815,9 +804,6 @@ function make_introduction($inventoryName, $source)
 function make_inventory_hosts(array $inventory, array $hosts)
 {
     foreach ($hosts as $hostName => $hostDetails) {
-
-        // echo "DEBUG: Rencia \n";
-        // var_dump($hostDetails);
 
         // Prefer a FQDN over a hostname and fall back to the machine name
         if (array_key_exists('fqdn', $hostDetails)) {
