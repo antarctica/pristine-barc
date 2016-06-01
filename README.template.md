@@ -130,7 +130,7 @@ More information is available in the
 
 ### Contributing policy
 
-This project welcomes contributions, see `CONTRIBUTING.md` for our general policy.
+This role welcomes contributions, see `CONTRIBUTING.md` for our general policy.
 
 ### Release procedure
 
@@ -144,4 +144,4 @@ Copyright 2016 NERC BAS.
 Unless stated otherwise, all documentation is licensed under the Open Government License - version 3.
 All code is licensed under the MIT license.
 
-Copies of these licenses are included within this project.
+Copies of these licenses are included within this role.
