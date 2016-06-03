@@ -5,6 +5,10 @@ This role adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased][unreleased]
 
+### Fixed
+
+* GitHub language statistics now ignore provisioning files
+
 ## 0.3.0 - 28/05/2016
 
 ### Removed - BREAKING!
